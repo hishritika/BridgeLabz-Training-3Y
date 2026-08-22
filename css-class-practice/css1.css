@@ -1,0 +1,85 @@
+h4{
+    background-color: rgb(126, 170, 155);
+    color: black;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+div h4{
+    background-color: aqua;
+}
+/* p{
+    background-color: limegreen;
+} */
+
+a {
+    background-color: rgb(93, 206, 199);
+
+}
+span{
+    background-color: yellow;
+
+}
+
+#heading1{
+    background-color: palevioletred;
+    text-align: left;
+}
+
+/*#id2{
+    background-color: brown;
+}*/
+
+.c1{
+    background-color: olivedrab;
+}
+
+.c2{
+    background-color: rgb(238, 144, 57);
+
+}
+
+.c3{
+    background-color: lightslategray;
+}
+
+.box{
+    /* background-color: yellow; */
+    height: 300px;
+    width: 1000px;
+    border: 2px  solid rgb(6, 6, 6);
+    background-image: url(../html-class-practice/images/cyber-security-concept-digital-art.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* margin-top: 15px; */
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin: 40px 50px 60px 30px;
+    /* margin: 30px 50px; */
+
+    /* padding: 15px 10px 6px 3px; */
+    padding: 40px 20px;
+}
+
+#box-color{
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    /* background-color: rgb(92, 175, 148); */
+    /* background-color: rgba(21,152,150,0.64);
+    background-color: #000; */
+    background-color: #1860dcb5;
+    /* background: linear-gradient(45deg, red, blue, yellow); */
+    /* background: linear-gradient(to right, red, blue);
+    background: linear-gradient(to left, red, yellow);
+    background: linear-gradient(to bottom, red, green);
+    background: linear-gradient(to top, red, pink); */
+
+}
+
+#inner-box{
+    background-color: red;
+}
+

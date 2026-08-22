@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internship Application Form</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 30px;
+        }
+        body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    margin: 0;
+    padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            width: 500px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        
+        fieldset {
+            border: 2px solid #4CAF50;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+       
+        legend {
+            font-size: 20px;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+
+       
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        
+        input[type="file"] {
+            margin-top: 8px;
+        }
+
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* Button hover effect */
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Reset button */
+        button[type="reset"] {
+            background-color: #f44336;
+            margin-left: 10px;
+        }
+
+        button[type="reset"]:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Internship Application Form</h1>
+
+    <form>
+
+        <div>
+            <legend>Personal Details</legend>
+
+            Name:
+            <input type="text" name="name" placeholder="Enter your name">
+            <br><br>
+
+            Email:
+            <input type="email" name="email" placeholder="Enter your email">
+            <br><br>
+
+            Phone:
+            <input type="tel" name="phone" placeholder="Enter your phone number">
+            <br><br>
+
+            Date of Birth:
+            <input type="date" name="dob">
+            <br><br>
+
+            Gender:
+            <input type="radio" name="gender" value="male"> Male
+
+            <input type="radio" name="gender" value="female"> Female
+
+            <input type="radio" name="gender" value="other"> Other
+
+            <br><br>
+
+            Course:
+            <select name="course">
+                <option value="">Select Course</option>
+                <option value="btech">B.Tech</option>
+                <option value="mba">MBA</option>
+                <option value="agriculture">Agriculture</option>
+                <option value="bca">BCA</option>
+            </select>
+
+            <br><br>
+
+            Skills:
+            <br>
+
+            <input type="checkbox" name="skill" value="html"> HTML
+
+            <input type="checkbox" name="skill" value="css"> CSS
+
+            <input type="checkbox" name="skill" value="python"> Python
+
+            <br><br>
+
+            Upload Resume:
+            <input type="file" name="resume" accept=".pdf,.doc,.docx">
+
+            <br><br>
+
+            <button type="submit">Submit</button>
+
+            <button type="reset">Reset</button>
+
+        </div>
+
+    </form>
+
+</body>
+</html>
