@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positions</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width:700x;
+            height : 700px;
+            background-color: yellow;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            gap:10px;
+            padding: 10px;
+
+        }
+        .child{
+             width: 10%;
+            height:50%;
+            background-color: red;
+            border: 1px solid black;
+            color: white;
+        }
+        .child1 {
+            background-color: rgb(243, 78, 78);
+            order: 1;
+        }
+        .child2 {
+            background-color: lightblue;
+            order: 1;
+            align-self: flex-start;
+        }
+        .child3{
+            background-color: rgb(127, 208, 127);
+            order: 3;
+        }
+        .child4{
+            background-color: rgb(244, 197, 238);
+            order: 2;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+<div  class = "child child1" >
+     <h5>child1</h5>
+ </div>
+<div class = "child child2">
+     <h5>child2</h5>
+</div>
+<div  class = "child child3">
+     <h5>child3</h5>
+</div>
+<div  class = "child child4">
+     <h5>child4</h5>
+</div>
+</div>
+</body>
+</html>
