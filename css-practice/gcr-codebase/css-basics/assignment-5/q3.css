@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f9;
+    color: #1e293b;
+    min-height: 100vh;
+
+    /* Flexbox keeps footer at the bottom */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styling */
+header {
+    background-color: #172f52;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+.team-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 60px auto;
+
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* Individual team card */
+.team-card {
+    background-color: white;
+
+    /* Box Model */
+    padding: 30px;
+    margin: 5px;
+
+    /* Border */
+    border: 2px solid #d5dce5;
+    border-radius: 12px;
+
+    /* Shadow effect */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+
+    /* Equal width for all cards */
+    flex: 1;
+
+    text-align: center;
+}
+
+/* Card heading */
+.team-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Role */
+.team-card h3 {
+    font-size: 1rem;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+/* Description */
+.team-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.team-lead {
+    background-color: #dbeafe;
+    border: 3px solid #2563eb;
+    border-style: dashed;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    background-color: #172f52;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+
+    .team-container {
+        flex-direction: column;
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .team-card {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+}

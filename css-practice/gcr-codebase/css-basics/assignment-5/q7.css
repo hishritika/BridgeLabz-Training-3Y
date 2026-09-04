@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eaf0f6;
+    color: #182f4f;
+}
+
+
+/* Main container */
+/* Flexbox centers the form horizontally and vertically */
+.contact-container {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+/* Contact form */
+.contact-form {
+    width: 100%;
+    max-width: 550px;
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    /* Subtle shadow around the form */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Form heading */
+.contact-form h1 {
+    margin: 0 0 8px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+/* Form description */
+.contact-form > p {
+    margin: 0 0 30px;
+    text-align: center;
+    color: #667085;
+}
+
+
+/* Individual form fields */
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+/* Labels */
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+
+/* Style all input fields and textarea */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #c8d0da;
+    border-radius: 7px;
+
+    background-color: #f8fafc;
+    color: #182f4f;
+
+    font-size: 1rem;
+
+    /* Subtle shadow on fields */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+
+    /* Smooth focus transition */
+    transition: border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+
+/* Prevent textarea from becoming too small */
+.form-group textarea {
+    resize: vertical;
+}
+
+
+/* Focus selector */
+/* Border changes color when user clicks an input */
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+
+    border-color: #2d6da3;
+
+    box-shadow: 0 0 0 3px rgba(45, 109, 163, 0.15);
+}
+
+
+/* Submit button */
+button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+    border-radius: 7px;
+
+    background-color: #182f4f;
+    color: white;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+
+/* Button hover effect */
+button:hover {
+    background-color: #2d5d91;
+}
+
+
+/* Responsive styling for small screens */
+@media (max-width: 500px) {
+
+    .contact-form {
+        padding: 25px 20px;
+    }
+
+    .contact-form h1 {
+        font-size: 1.7rem;
+    }
+}
