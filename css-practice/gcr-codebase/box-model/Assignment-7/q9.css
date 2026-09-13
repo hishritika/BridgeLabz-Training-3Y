@@ -1,0 +1,390 @@
+/* GENERAL PAGE STYLING */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f1f5f9;
+
+    color: #1e293b;
+
+    line-height: 1.6;
+}
+
+
+/*HEADER */
+
+.header {
+    padding: 35px 20px;
+
+    text-align: center;
+
+    background-color: #0f172a;
+
+    color: white;
+}
+
+.header h1 {
+    margin: 0 0 8px;
+
+    font-size: 2.2rem;
+}
+
+.header p {
+    margin: 0;
+}
+
+
+/* MAIN CONTENT */
+
+main {
+    width: 90%;
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 50px 0;
+}
+
+section {
+    margin-bottom: 45px;
+}
+
+
+/*FORM SECTION */
+
+.form-section {
+    padding: 35px;
+
+    background-color: white;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 14px;
+
+    /*
+       Subtle shadow gives the form
+       a clean elevated appearance.
+    */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.form-section h2 {
+    margin: 0 0 8px;
+
+    text-align: center;
+
+    font-size: 2rem;
+
+    color: #1e3a8a;
+}
+
+.form-description {
+    margin: 0 0 30px;
+
+    text-align: center;
+
+    color: #64748b;
+}
+
+
+/* FORM */
+
+.contact-form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+/*
+   Each form group contains one label
+   and one form control.
+*/
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+.form-group label {
+    font-weight: 700;
+
+    color: #334155;
+}
+
+
+/* INPUT AND TEXTAREA */
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 2px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    background-color: #f8fafc;
+
+    color: #1e293b;
+
+    font-family: inherit;
+
+    font-size: 1rem;
+
+    /*
+       Removes the browser's default outline
+       so that we can create our own custom
+       focus outline below.
+    */
+    outline: none;
+
+    /*
+       Smooth transition for border and shadow.
+    */
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/*:FOCUS PSEUDO-CLASS*/
+
+/*
+   :focus applies styles when the user
+   clicks into or tabs into an input.
+
+   The outline color changes to blue and
+   outline-offset creates space between
+   the outline and border.
+*/
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+
+    outline: 3px solid #93c5fd;
+
+    outline-offset: 4px;
+
+    background-color: white;
+
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.15);
+}
+
+
+/* TEXTAREA */
+
+.form-group textarea {
+    resize: vertical;
+
+    min-height: 140px;
+}
+
+
+/* SUBMIT BUTTON */
+
+.submit-button {
+    align-self: center;
+
+    padding: 13px 30px;
+
+    border: 2px solid #1d4ed8;
+
+    border-radius: 8px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.submit-button:hover {
+    background-color: #1d4ed8;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 15px rgba(37, 99, 235, 0.25);
+}
+
+
+/*
+   Custom keyboard focus style for the button.
+*/
+
+.submit-button:focus {
+    outline: 3px solid #93c5fd;
+
+    outline-offset: 4px;
+}
+
+
+/*OUTLINE STYLE DEMONSTRATION */
+
+.outline-section {
+    padding: 35px;
+
+    background-color: white;
+
+    border-radius: 14px;
+
+    border: 1px solid #cbd5e1;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.outline-section h2 {
+    margin: 0 0 30px;
+
+    text-align: center;
+
+    color: #1e3a8a;
+}
+
+
+.outline-container {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+/* Common outline box styling */
+
+.outline-box {
+    flex: 1 1 200px;
+
+    padding: 25px;
+
+    background-color: #f8fafc;
+
+    border: 2px solid #334155;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    /*
+       outline-offset creates space between
+       the border and the outline.
+    */
+
+    outline-offset: 5px;
+}
+
+
+.outline-box h3 {
+    margin-top: 0;
+
+    color: #1e3a8a;
+}
+
+.outline-box p {
+    margin-bottom: 0;
+
+    font-size: 0.9rem;
+
+    color: #64748b;
+}
+
+
+/* DIFFERENT OUTLINE STYLES */
+
+/*
+   Dotted outline
+*/
+
+.dotted-outline {
+    outline: 3px dotted #2563eb;
+}
+
+
+/*
+   Dashed outline
+*/
+
+.dashed-outline {
+    outline: 3px dashed #16a34a;
+}
+
+
+/*
+   Solid outline
+*/
+
+.solid-outline {
+    outline: 3px solid #9333ea;
+}
+
+
+/*FOOTER */
+
+.footer {
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: #0f172a;
+
+    color: white;
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+/*RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+
+    main {
+        width: 94%;
+
+        padding: 35px 0;
+    }
+
+    .form-section,
+    .outline-section {
+        padding: 25px 20px;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .outline-container {
+        flex-direction: column;
+    }
+}

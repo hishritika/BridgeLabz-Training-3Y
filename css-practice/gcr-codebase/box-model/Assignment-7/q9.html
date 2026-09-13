@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Outline and Focus Styling Form</title>
+
+    <link rel="stylesheet" href="q9.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Outline & Focus Styling</h1>
+        <p>A simple form demonstrating CSS outline and focus effects.</p>
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <section class="form-section">
+
+            <h2>Contact Form</h2>
+
+            <p class="form-description">
+                Click or tab into each field to see the custom
+                focus outline and styling.
+            </p>
+
+
+            <!-- Form -->
+            <form class="contact-form">
+
+                <!-- Name field -->
+                <div class="form-group">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                    >
+
+                </div>
+
+
+                <!-- Email field -->
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                    >
+
+                </div>
+
+
+                <!-- Subject field -->
+                <div class="form-group">
+
+                    <label for="subject">
+                        Subject
+                    </label>
+
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        placeholder="Enter the subject"
+                    >
+
+                </div>
+
+
+                <!-- Message field -->
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message here..."
+                    ></textarea>
+
+                </div>
+
+
+                <!-- Submit button -->
+                <button type="submit" class="submit-button">
+                    Send Message
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Outline styles demonstration -->
+        <section class="outline-section">
+
+            <h2>Outline Styles</h2>
+
+            <div class="outline-container">
+
+                <div class="outline-box dotted-outline">
+                    <h3>Dotted</h3>
+                    <p>outline-style: dotted</p>
+                </div>
+
+                <div class="outline-box dashed-outline">
+                    <h3>Dashed</h3>
+                    <p>outline-style: dashed</p>
+                </div>
+
+                <div class="outline-box solid-outline">
+                    <h3>Solid</h3>
+                    <p>outline-style: solid</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 CSS Practice &mdash; Outline and Focus Styling</p>
+    </footer>
+
+</body>
+</html>

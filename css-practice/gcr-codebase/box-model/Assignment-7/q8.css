@@ -1,0 +1,496 @@
+/* GENERAL PAGE STYLING */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f1f5f9;
+
+    color: #1e293b;
+
+    line-height: 1.6;
+}
+
+
+/* HEADER */
+
+.header {
+    padding: 35px 20px;
+
+    text-align: center;
+
+    background-color: #0f172a;
+
+    color: white;
+}
+
+.header h1 {
+    margin: 0 0 8px;
+
+    font-size: 2.2rem;
+}
+
+.header p {
+    margin: 0;
+}
+
+
+/* MAIN CONTENT */
+
+main {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 50px 0;
+}
+
+section {
+    margin-bottom: 55px;
+}
+
+section h2 {
+    margin: 0 0 35px;
+
+    text-align: center;
+
+    font-size: 2rem;
+}
+
+
+/* BOX MODEL DEMONSTRATION */
+
+/*
+   Flexbox is used to center the complete
+   box model demonstration horizontally.
+*/
+
+.box-model-section {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+/*
+   MARGIN LAYER
+
+   The outermost layer represents margin.
+   Margin creates space outside the element.
+*/
+
+.margin-layer {
+    position: relative;
+
+    width: 520px;
+
+    height: 420px;
+
+    padding: 55px;
+
+    background-color: #fde68a;
+
+    /*
+       Outline helps visually separate
+       the margin layer.
+    */
+    outline: 3px dashed #d97706;
+
+    outline-offset: 4px;
+}
+
+
+/*
+   BORDER LAYER
+
+   The border surrounds the padding
+   and content areas.
+*/
+
+.border-layer {
+    position: relative;
+
+    width: 100%;
+
+    height: 100%;
+
+    padding: 45px;
+
+    border: 15px solid #2563eb;
+
+    background-color: #bfdbfe;
+}
+
+
+/*
+   PADDING LAYER
+
+   Padding is the space between the
+   content and border.
+*/
+
+.padding-layer {
+    position: relative;
+
+    width: 100%;
+
+    height: 100%;
+
+    padding: 35px;
+
+    background-color: #bbf7d0;
+}
+
+
+/*
+   CONTENT LAYER
+
+   This is the innermost part of
+   the box model.
+*/
+
+.content-layer {
+    width: 100%;
+
+    height: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #ffffff;
+
+    border: 2px solid #166534;
+
+    color: #166534;
+
+    font-size: 1.4rem;
+
+    font-weight: bold;
+
+    text-align: center;
+}
+
+
+/* LAYER LABELS */
+
+.layer-label {
+    position: absolute;
+
+    font-size: 0.75rem;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+/* Margin label */
+
+.margin-label {
+    top: 15px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #92400e;
+}
+
+
+/* Border label */
+
+.border-label {
+    top: 8px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #1e3a8a;
+}
+
+
+/* Padding label */
+
+.padding-label {
+    top: 8px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #166534;
+}
+
+
+/* BOX MODEL DESCRIPTION CARDS*/
+
+.description-container {
+    width: 100%;
+
+    margin-top: 50px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+
+.description-card {
+    flex: 1 1 200px;
+
+    padding: 20px;
+
+    background-color: white;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.description-card h3 {
+    margin-top: 0;
+
+    color: #1e3a8a;
+}
+
+.description-card p {
+    margin-bottom: 0;
+
+    color: #475569;
+
+    font-size: 0.92rem;
+}
+
+
+/*BOX-SIZING SECTION */
+
+.sizing-container {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: 30px;
+}
+
+
+/* Common sizing card */
+
+.sizing-card {
+    flex: 1;
+
+    max-width: 450px;
+
+    padding: 25px;
+
+    background-color: white;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.sizing-card h3 {
+    margin-top: 0;
+
+    color: #1e3a8a;
+}
+
+
+/*CONTENT-BOX */
+
+/*
+   content-box is the default CSS box-sizing
+   behavior.
+
+   Width = content width only.
+
+   Total width becomes:
+
+   200px content
+   + 40px padding
+   + 8px border
+   = 248px total width
+*/
+
+.content-box-demo {
+    box-sizing: content-box;
+
+    width: 200px;
+
+    height: 100px;
+
+    padding: 20px;
+
+    border: 4px solid #dc2626;
+
+    margin: 20px auto;
+
+    background-color: #fee2e2;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-weight: bold;
+
+    color: #991b1b;
+}
+
+
+/* BORDER-BOX */
+
+/*
+   border-box includes padding and border
+   inside the declared width.
+
+   Total width remains exactly 200px.
+*/
+
+.border-box-demo {
+    box-sizing: border-box;
+
+    width: 200px;
+
+    height: 100px;
+
+    padding: 20px;
+
+    border: 4px solid #2563eb;
+
+    margin: 20px auto;
+
+    background-color: #dbeafe;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-weight: bold;
+
+    color: #1e3a8a;
+}
+
+
+.sizing-card p {
+    color: #475569;
+
+    font-size: 0.92rem;
+}
+
+
+/*FOOTER */
+
+.footer {
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: #0f172a;
+
+    color: white;
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 800px) {
+
+    .margin-layer {
+        width: 90vw;
+
+        max-width: 520px;
+
+        height: 380px;
+
+        padding: 45px;
+    }
+
+    .border-layer {
+        padding: 35px;
+    }
+
+    .padding-layer {
+        padding: 25px;
+    }
+
+    .sizing-container {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .sizing-card {
+        width: 100%;
+
+        max-width: 450px;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    main {
+        width: 94%;
+    }
+
+    .margin-layer {
+        width: 90vw;
+
+        height: 320px;
+
+        padding: 35px;
+    }
+
+    .border-layer {
+        padding: 25px;
+
+        border-width: 10px;
+    }
+
+    .padding-layer {
+        padding: 18px;
+    }
+
+    .content-layer {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+}

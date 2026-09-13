@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Height and Width Practice</title>
+
+    <link rel="stylesheet" href="q2.css">
+</head>
+
+<body>
+
+    <!-- Header section -->
+    <header class="header">
+        <h1>Height & Width Practice</h1>
+        <p>Understanding CSS sizing units and dimensions</p>
+    </header>
+
+    <!-- Main content -->
+    <main>
+
+        <section class="practice-section">
+
+            <h2>Different Height &amp; Width Units</h2>
+
+            <!-- Flexbox container for horizontal and vertical alignment -->
+            <div class="box-container">
+
+                <!-- Pixel dimensions -->
+                <article class="size-box pixel-box">
+                    <h3>Pixels</h3>
+                    <p>Width: 220px</p>
+                    <p>Height: 150px</p>
+                </article>
+
+                <!-- Percentage dimensions -->
+                <article class="size-box percent-box">
+                    <h3>Percentage</h3>
+                    <p>Width: 80%</p>
+                    <p>Height: 180px</p>
+                </article>
+
+                <!-- Viewport height -->
+                <article class="size-box viewport-box">
+                    <h3>Viewport Height</h3>
+                    <p>Height: 25vh</p>
+                    <p>Relative to viewport</p>
+                </article>
+
+                <!-- em dimensions -->
+                <article class="size-box em-box">
+                    <h3>EM Unit</h3>
+                    <p>Width: 14em</p>
+                    <p>Relative to font size</p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Min-height, max-width and overflow demonstration -->
+        <section class="properties-section">
+
+            <h2>Min-Height, Max-Width &amp; Overflow</h2>
+
+            <div class="property-container">
+
+                <!-- min-height demonstration -->
+                <article class="property-box min-height-box">
+                    <h3>Min-Height</h3>
+
+                    <p>
+                        This box uses a minimum height.
+                        The content can make the box grow beyond
+                        the minimum height when necessary.
+                    </p>
+                </article>
+
+
+                <!-- max-width demonstration -->
+                <article class="property-box max-width-box">
+                    <h3>Max-Width</h3>
+
+                    <p>
+                        This box uses max-width so that it
+                        never becomes wider than the specified
+                        maximum value.
+                    </p>
+                </article>
+
+
+                <!-- overflow demonstration -->
+                <article class="property-box overflow-box">
+                    <h3>Overflow</h3>
+
+                    <p>
+                        This is a long text used to demonstrate
+                        the CSS overflow property. When content
+                        exceeds the fixed height of this box,
+                        the extra content becomes scrollable.
+                        This allows us to keep the box size fixed.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <p>&copy; 2026 CSS Practice &mdash; Height and Width</p>
+    </footer>
+
+</body>
+</html>

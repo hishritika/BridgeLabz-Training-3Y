@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Box Model Exploration</title>
+
+    <link rel="stylesheet" href="q8.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>CSS Box Model</h1>
+        <p>Understanding Content, Padding, Border and Margin</p>
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Box Model Explanation -->
+        <section class="box-model-section">
+
+            <h2>Box Model Layers</h2>
+
+            <!--
+                The outer element represents the margin.
+                Inside it are the border, padding and content.
+            -->
+            <div class="margin-layer">
+
+                <span class="layer-label margin-label">
+                    MARGIN
+                </span>
+
+                <div class="border-layer">
+
+                    <span class="layer-label border-label">
+                        BORDER
+                    </span>
+
+                    <div class="padding-layer">
+
+                        <span class="layer-label padding-label">
+                            PADDING
+                        </span>
+
+                        <div class="content-layer">
+                            CONTENT
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Descriptions -->
+            <div class="description-container">
+
+                <article class="description-card">
+                    <h3>Content</h3>
+                    <p>
+                        The content area contains the actual text,
+                        images or other information inside an element.
+                    </p>
+                </article>
+
+                <article class="description-card">
+                    <h3>Padding</h3>
+                    <p>
+                        Padding creates space between the content
+                        and the element's border.
+                    </p>
+                </article>
+
+                <article class="description-card">
+                    <h3>Border</h3>
+                    <p>
+                        The border surrounds the padding and content
+                        and can have different widths and styles.
+                    </p>
+                </article>
+
+                <article class="description-card">
+                    <h3>Margin</h3>
+                    <p>
+                        Margin creates space outside the border and
+                        separates the element from other elements.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Box Sizing Demonstration -->
+        <section class="sizing-section">
+
+            <h2>Box-Sizing Comparison</h2>
+
+            <div class="sizing-container">
+
+                <!-- Default content-box -->
+                <article class="sizing-card">
+
+                    <h3>content-box</h3>
+
+                    <div class="content-box-demo">
+                        200px Width
+                    </div>
+
+                    <p>
+                        With <strong>content-box</strong>, the declared
+                        width applies only to the content area.
+                        Padding and border are added to the total size.
+                    </p>
+
+                </article>
+
+
+                <!-- border-box -->
+                <article class="sizing-card">
+
+                    <h3>border-box</h3>
+
+                    <div class="border-box-demo">
+                        200px Width
+                    </div>
+
+                    <p>
+                        With <strong>border-box</strong>, the declared
+                        width includes the content, padding and border.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 CSS Practice &mdash; Box Model Exploration</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+/*General Page Styling*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    line-height: 1.6;
+}
+
+
+/*Fixed Header*/
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    text-align: center;
+
+    padding: 18px 20px;
+
+    background-color: #0f172a;
+
+    border-bottom: 2px solid white;
+}
+
+.header h1 {
+    margin: 0 0 5px;
+    font-size: 2rem;
+}
+
+.header p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+
+/*Main Content*/
+
+main {
+    padding-top: 110px;
+    padding-bottom: 80px;
+}
+
+
+/* Common Gradient Section Styling*/
+
+.gradient-section {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 80px 25px;
+
+    /*
+       background-attachment: fixed creates a
+       parallax-like effect while scrolling.
+    */
+    background-attachment: fixed;
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Linear Gradient*/
+
+/*
+   The colors change along a straight line
+   at an angle of 135 degrees.
+*/
+
+.linear-section {
+    background:
+        linear-gradient(
+            rgb(103, 103, 208)
+            /* 135deg,
+            #2563eb,
+            #7c3aed,
+            #db2777 */
+        );
+}
+
+
+/* Radial Gradient*/
+
+/*
+   The color transition starts from the center
+   and spreads outward in a circular pattern.
+*/
+
+.radial-section {
+    background:
+        radial-gradient(
+            rgb(229, 49, 85)
+            /* circle,
+            #f59e0b,
+            #ef4444,
+            #991b1b */
+        );
+}
+
+
+/*Content Card*/
+
+.content {
+    width: 100%;
+    max-width: 700px;
+
+    padding: 45px;
+
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, 0.35);
+
+    border: 2px solid rgba(255, 255, 255, 0.7);
+
+    border-radius: 20px;
+
+    /*
+       Blur creates a subtle glass-like effect
+       without requiring any external framework.
+    */
+    backdrop-filter: blur(6px);
+}
+
+.content h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    font-size: 2.5rem;
+}
+
+.content p {
+    font-size: 1.1rem;
+}
+
+
+/* CSS gradient example displayed as text */
+
+.code-example {
+    margin-top: 25px;
+
+    padding: 15px;
+
+    background-color: rgba(0, 0, 0, 0.35);
+
+    border-radius: 8px;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 0.95rem !important;
+}
+
+
+/*Fixed Footer*/
+
+.footer {
+    position: fixed;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    padding: 15px;
+
+    text-align: center;
+
+    background-color: #0f172a;
+
+    border-top: 2px solid white;
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+/*Responsive Design*/
+
+@media (max-width: 700px) {
+
+    .header {
+        padding: 15px;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .header p {
+        font-size: 0.85rem;
+    }
+
+    .gradient-section {
+        padding: 60px 15px;
+    }
+
+    .content {
+        padding: 30px 20px;
+    }
+
+    .content h2 {
+        font-size: 2rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+}

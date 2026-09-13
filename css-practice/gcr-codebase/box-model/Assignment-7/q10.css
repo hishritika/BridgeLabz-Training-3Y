@@ -1,0 +1,330 @@
+/*GENERAL PAGE STYLING */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f1f5f9;
+
+    color: #1e293b;
+
+    line-height: 1.6;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* HEADER */
+
+.header {
+    padding: 35px 20px;
+
+    text-align: center;
+
+    background-color: #0f172a;
+
+    color: white;
+}
+
+.header h1 {
+    margin: 0 0 8px;
+
+    font-size: 2.2rem;
+}
+
+.header p {
+    margin: 0;
+
+    font-size: 1rem;
+}
+
+
+/*NAVIGATION BAR */
+
+.navbar {
+    background-color: white;
+
+    /*
+       Bottom border separates the navigation
+       bar from the main content.
+    */
+    border-bottom: 2px solid #cbd5e1;
+
+    /*
+       Subtle shadow gives the navbar
+       a slightly elevated appearance.
+    */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* NAVIGATION CONTAINER */
+
+/*
+   Flexbox arranges the five navigation
+   links horizontally.
+*/
+
+.nav-container {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* NAVIGATION LINKS */
+
+.nav-link {
+    position: relative;
+
+    /*
+       Padding provides space inside
+       each navigation link.
+    */
+    padding: 16px 25px;
+
+    border-left: 1px solid #e2e8f0;
+
+    color: #334155;
+
+    text-decoration: none;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    /*
+       Required smooth transition:
+       transition: all 0.3s ease;
+    */
+    transition: all 0.3s ease;
+}
+
+
+/*
+   Right border on the last link keeps
+   the navigation visually balanced.
+*/
+
+.nav-link:last-child {
+    border-right: 1px solid #e2e8f0;
+}
+
+
+/* HOVER EFFECT */
+
+/*
+   When the user moves the pointer over
+   a navigation link, its background,
+   text color and position change.
+*/
+
+.nav-link:hover {
+    background-color: #dbeafe;
+
+    color: #1d4ed8;
+
+    transform: translateY(-2px);
+}
+
+
+/* ACTIVE LINK */
+
+/*
+   The active class identifies the
+   currently selected navigation link.
+
+   It receives a distinct background
+   and an underline.
+*/
+
+.nav-link.active {
+    background-color: #2563eb;
+
+    color: white;
+}
+
+
+/*
+   ::after creates the active underline.
+*/
+
+.nav-link.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 20%;
+
+    right: 20%;
+
+    bottom: 5px;
+
+    height: 3px;
+
+    background-color: white;
+
+    border-radius: 5px;
+}
+
+
+/*
+   Keep active link visually distinct
+   even when hovered.
+*/
+
+.nav-link.active:hover {
+    background-color: #1d4ed8;
+
+    color: white;
+}
+
+
+/* MAIN CONTENT */
+
+main {
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    padding: 60px 20px;
+}
+
+
+.content-section {
+    width: 100%;
+
+    max-width: 750px;
+
+    padding: 40px;
+
+    background-color: white;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+.content-section h2 {
+    margin-top: 0;
+
+    margin-bottom: 20px;
+
+    color: #1e3a8a;
+
+    font-size: 1.8rem;
+}
+
+
+.content-section p {
+    color: #475569;
+
+    margin-bottom: 15px;
+}
+
+
+/* FOOTER */
+
+/*
+   Footer text is centered as required.
+*/
+
+.footer {
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: #0f172a;
+
+    color: white;
+}
+
+
+.footer p {
+    margin: 0;
+
+    font-size: 0.9rem;
+}
+
+
+/* RESPONSIVE NAVIGATION */
+
+/*
+   Below 700px, the navigation links
+   stack vertically.
+*/
+
+@media (max-width: 700px) {
+
+    .nav-container {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+
+    .nav-link {
+        width: 100%;
+
+        border-left: none;
+
+        border-bottom: 1px solid #e2e8f0;
+
+        text-align: center;
+    }
+
+
+    .nav-link:last-child {
+        border-right: none;
+
+        border-bottom: none;
+    }
+
+
+    .nav-link.active::after {
+        left: 35%;
+
+        right: 35%;
+
+        bottom: 7px;
+    }
+
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+
+    main {
+        padding: 40px 15px;
+    }
+
+
+    .content-section {
+        padding: 30px 20px;
+    }
+}

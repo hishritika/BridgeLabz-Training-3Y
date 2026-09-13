@@ -1,0 +1,285 @@
+/*  GENERAL PAGE STYLING */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f1f5f9;
+
+    color: #1e293b;
+
+    line-height: 1.6;
+}
+
+
+/* HEADER */
+
+.header {
+    padding: 35px 20px;
+
+    text-align: center;
+
+    background-color: #0f172a;
+
+    color: white;
+}
+
+.header h1 {
+    margin: 0 0 8px;
+
+    font-size: 2.2rem;
+}
+
+.header p {
+    margin: 0;
+
+    font-size: 1rem;
+}
+
+
+/* MAIN SECTION */
+
+main {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 55px 25px;
+}
+
+.transform-section h2 {
+    margin: 0 0 45px;
+
+    text-align: center;
+
+    font-size: 2rem;
+}
+
+
+/*TRANSFORMATION CONTAINER */
+
+/*
+   Flexbox arranges the transformation
+   cards horizontally.
+*/
+
+.transform-container {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    gap: 30px;
+
+    flex-wrap: nowrap;
+}
+
+
+/* TRANSFORMATION CARD*/
+
+.transform-card {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 25px 20px;
+
+    text-align: center;
+
+    background-color: white;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.transform-card h3 {
+    margin: 25px 0 8px;
+
+    font-size: 1.3rem;
+
+    color: #1e3a8a;
+}
+
+.transform-card p {
+    margin: 0;
+
+    color: #475569;
+
+    font-size: 0.9rem;
+}
+
+
+/*COMMON TRANSFORMATION BOX */
+
+.transform-box {
+    width: 130px;
+
+    height: 130px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 12px;
+
+    color: white;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    /*
+       Required transition:
+       Every transformation takes 0.4 seconds.
+    */
+    transition: all 0.4s ease;
+}
+
+
+/*ROTATE() */
+
+/*
+   rotate() rotates the element by a
+   specified angle.
+
+   On hover:
+   The box rotates 45 degrees.
+*/
+
+.rotate-box {
+    background-color: #2563eb;
+}
+
+.rotate-box:hover {
+    transform: rotate(45deg);
+}
+
+
+/*SCALE()*/
+
+/*
+   scale() changes the size of an element.
+
+   scale(1.25) makes the box 25% larger
+   than its original size.
+*/
+
+.scale-box {
+    background-color: #16a34a;
+}
+
+.scale-box:hover {
+    transform: scale(1.25);
+}
+
+
+/* TRANSLATE()*/
+
+/*
+   translate() moves an element along
+   the X and Y axes.
+
+   Here the box moves 30px right and
+   20px upward.
+*/
+
+.translate-box {
+    background-color: #ea580c;
+}
+
+.translate-box:hover {
+    transform: translate(30px, -20px);
+}
+
+
+/* SKEW() */
+
+/*
+   skew() slants an element.
+
+   The first value controls the X axis.
+   The second value controls the Y axis.
+*/
+
+.skew-box {
+    background-color: #9333ea;
+}
+
+.skew-box:hover {
+    transform: skew(15deg, 8deg);
+}
+
+
+/* FOOTER */
+
+.footer {
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: #0f172a;
+
+    color: white;
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+/*RESPONSIVE DESIGN*/
+
+@media (max-width: 900px) {
+
+    /*
+       Allow cards to wrap on smaller screens
+       so that the content remains readable.
+    */
+
+    .transform-container {
+        flex-wrap: wrap;
+    }
+
+    .transform-card {
+        flex: 1 1 40%;
+
+        min-width: 260px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    main {
+        padding: 35px 15px;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .transform-container {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .transform-card {
+        width: 100%;
+
+        max-width: 350px;
+    }
+}

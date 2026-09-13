@@ -1,0 +1,268 @@
+/*  General Page Styling*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+
+/*Header*/
+
+.header {
+    text-align: center;
+    background-color: #0f172a;
+    color: white;
+    padding: 35px 20px;
+}
+
+.header h1 {
+    margin: 0 0 8px;
+    font-size: 2.2rem;
+}
+
+.header p {
+    margin: 0;
+}
+
+
+/* Main Content*/
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 45px 25px;
+}
+
+section {
+    margin-bottom: 55px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+
+/* Different Height & Width Units*/
+
+/*
+   Flexbox is used to align all boxes
+   horizontally and vertically.
+*/
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+
+    width: 100%;
+}
+
+
+/* Common box styling */
+
+.size-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    border: 3px solid #1e293b;
+
+    padding: 15px;
+
+    transition: transform 0.3s ease;
+}
+
+.size-box:hover {
+    transform: translateY(-6px);
+}
+
+.size-box h3 {
+    margin: 0 0 10px;
+}
+
+.size-box p {
+    margin: 3px 0;
+}
+
+
+/*PX UNIT
+   Fixed width and height*/
+
+.pixel-box {
+    width: 220px;
+    height: 150px;
+
+    background-color: #bfdbfe;
+}
+
+
+/*% UNIT
+   Width is relative to parent*/
+
+.percent-box {
+    width: 20%;
+    height: 180px;
+
+    min-width: 200px;
+
+    background-color: #bbf7d0;
+}
+
+
+/*VH UNIT
+   Height is relative to viewport height */
+
+.viewport-box {
+    width: 220px;
+    height: 25vh;
+
+    min-height: 150px;
+
+    background-color: #fde68a;
+}
+
+
+/*EM UNIT
+   Size is relative to element's font size*/
+
+.em-box {
+    font-size: 16px;
+
+    width: 14em;
+    height: 10em;
+
+    background-color: #fecaca;
+}
+
+
+/*Min-Height, Max-Width & Overflow*/
+
+.property-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+/* Common property box styling */
+
+.property-box {
+    width: 30%;
+    min-width: 250px;
+
+    padding: 25px;
+
+    border: 3px solid #334155;
+    background-color: white;
+
+    text-align: center;
+}
+
+.property-box h3 {
+    margin-top: 0;
+}
+
+
+/*MIN-HEIGHT*/
+
+.min-height-box {
+    min-height: 220px;
+
+    background-color: #ddd6fe;
+}
+
+
+/*MAX-WIDTH*/
+
+/*
+   Even if the available space becomes larger,
+   this box cannot exceed 300px in width.
+*/
+
+.max-width-box {
+    width: 100%;
+    max-width: 300px;
+
+    min-height: 220px;
+
+    background-color: #bae6fd;
+}
+
+
+/* OVERFLOW*/
+
+/*
+   Fixed height is used so that the content
+   can exceed the available space.
+   
+   overflow: auto creates a scrollbar
+   whenever the content is larger than
+   the box.
+*/
+
+.overflow-box {
+    height: 220px;
+
+    overflow: auto;
+
+    background-color: #fed7aa;
+}
+
+
+/*Footer*/
+
+.footer {
+    text-align: center;
+    background-color: #0f172a;
+    color: white;
+
+    padding: 20px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+/*Responsive Design*/
+
+@media (max-width: 700px) {
+
+    main {
+        padding: 30px 15px;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .box-container,
+    .property-container {
+        flex-direction: column;
+    }
+
+    .size-box,
+    .property-box {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .percent-box {
+        width: 100%;
+    }
+}

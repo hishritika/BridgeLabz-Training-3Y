@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Advanced CSS Selectors</title>
+
+    <link rel="stylesheet" href="q5.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Advanced CSS Selectors</h1>
+        <p>Explore attribute selectors, pseudo-classes, pseudo-elements and combinators.</p>
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Introduction -->
+        <section class="intro">
+            <h2>Selector Demonstration</h2>
+
+            <p>
+                CSS selectors allow us to target specific HTML elements
+                and apply styles based on their attributes, position,
+                state, and relationship with other elements.
+            </p>
+        </section>
+
+
+        <!-- Attribute Selector Section -->
+        <section class="attribute-section">
+
+            <h2>Attribute Selectors</h2>
+
+            <div class="form-area">
+
+                <!-- Text input -->
+                <label for="name">Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                >
+
+
+                <!-- Email input -->
+                <label for="email">Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                >
+
+
+                <!-- Links -->
+                <nav class="links">
+                    <a href="https://github.com">GitHub</a>
+                    <a href="https://developer.mozilla.org">Web Docs</a>
+                    <a href="https://www.google.com">Google</a>
+                    <a href="/local-page">Local Page</a>
+                </nav>
+
+            </div>
+
+        </section>
+
+
+        <!-- Pseudo Class Section -->
+        <section class="pseudo-section">
+
+            <h2>Pseudo-Classes</h2>
+
+            <ul class="selector-list">
+                <li>Hover over this item</li>
+                <li>This is the second item</li>
+                <li>This is the third item</li>
+                <li>This is the fourth item</li>
+            </ul>
+
+            <button class="demo-button">
+                Hover Me
+            </button>
+
+        </section>
+
+
+        <!-- Combinator Section -->
+        <section class="combinator-section">
+
+            <h2>CSS Combinators</h2>
+
+            <div class="parent-box">
+
+                <h3>Parent Heading</h3>
+
+                <p>
+                    This paragraph is a direct child of the parent.
+                </p>
+
+                <div class="nested-box">
+                    <p>
+                        This paragraph is a descendant inside
+                        another element.
+                    </p>
+                </div>
+
+                <p>
+                    This is another paragraph after the nested box.
+                </p>
+
+                <span>Sibling span element</span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 CSS Practice &mdash; Advanced Selectors</p>
+    </footer>
+
+</body>
+</html>

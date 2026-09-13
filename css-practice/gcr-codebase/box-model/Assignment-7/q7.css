@@ -1,0 +1,386 @@
+/* GENERAL PAGE STYLING */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    /*
+       Arial is used as the primary sans-serif
+       font for the overall webpage.
+    */
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f8fafc;
+
+    color: #1e293b;
+
+    /*
+       Increased line-height improves readability.
+    */
+    line-height: 1.7;
+}
+
+
+/* HEADER */
+
+.header {
+    padding: 40px 20px;
+
+    text-align: center;
+
+    background-color: #0f172a;
+
+    color: white;
+}
+
+.header h1 {
+    margin: 0 0 8px;
+
+    /*
+       Different font weight is demonstrated here.
+    */
+    font-weight: 700;
+
+    font-size: 2.3rem;
+
+    /*
+       Letter spacing gives the heading
+       more visual separation.
+    */
+    letter-spacing: 1px;
+}
+
+.header p {
+    margin: 0;
+
+    font-size: 1rem;
+
+    font-weight: 400;
+}
+
+
+/* MAIN CONTENT */
+
+main {
+    width: 90%;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 55px 0;
+}
+
+
+/*ARTICLE */
+
+.article {
+    background-color: white;
+
+    padding: 45px 55px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/*  ARTICLE HEADER */
+
+.article-header {
+    text-align: center;
+
+    padding-bottom: 30px;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+
+/* Small category text */
+
+.category {
+    margin: 0 0 15px;
+
+    /*
+       Monospace font demonstrates another
+       font family.
+    */
+    font-family: "Courier New", monospace;
+
+    font-size: 0.8rem;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #2563eb;
+}
+
+
+/* Main article heading */
+
+.article-header h2 {
+    margin: 0 0 15px;
+
+    /*
+       Georgia demonstrates a serif
+       font family.
+    */
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 2.6rem;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    letter-spacing: -0.5px;
+
+    text-align: center;
+}
+
+
+/* Subtitle */
+
+.subtitle {
+    margin: 0 auto;
+
+    max-width: 650px;
+
+    font-size: 1.05rem;
+
+    font-weight: 400;
+
+    color: #64748b;
+
+    line-height: 1.6;
+}
+
+
+/*ARTICLE CONTENT */
+
+.article-content {
+    padding-top: 30px;
+
+    /*
+       Text is left aligned for comfortable
+       article reading.
+    */
+    text-align: left;
+}
+
+
+/* Paragraph styling */
+
+.article-content p {
+    margin: 0 0 22px;
+
+    font-size: 1.05rem;
+
+    font-weight: 400;
+
+    /*
+       Comfortable line spacing improves
+       readability.
+    */
+    line-height: 1.8;
+
+    /*
+       Slight letter spacing makes text
+       easier to read.
+    */
+    letter-spacing: 0.2px;
+}
+
+
+/*::FIRST-LETTER PSEUDO-ELEMENT*/
+
+/*
+   ::first-letter selects the first letter
+   of the paragraph.
+
+   It is commonly used for a decorative
+   drop-cap effect.
+*/
+
+.opening::first-letter {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 4rem;
+
+    font-weight: 700;
+
+    float: left;
+
+    line-height: 0.85;
+
+    margin-right: 8px;
+
+    color: #2563eb;
+}
+
+
+/* ::FIRST-LINE PSEUDO-ELEMENT */
+
+/*
+   ::first-line selects the first rendered
+   line of an element.
+
+   The browser automatically determines
+   which text belongs to the first line.
+*/
+
+.opening::first-line {
+    font-weight: 600;
+
+    letter-spacing: 0.4px;
+}
+
+
+/*  STRONG ELEMENT */
+
+/*
+   <strong> represents strong importance.
+   A custom color and weight are applied.
+*/
+
+.article-content strong {
+    color: #1d4ed8;
+
+    font-weight: 700;
+}
+
+
+/*EM ELEMENT */
+
+/*
+   <em> represents emphasized text.
+
+   The default italic appearance is combined
+   with a custom color.
+*/
+
+.article-content em {
+    color: #7c3aed;
+
+    font-style: italic;
+
+    font-weight: 600;
+}
+
+
+/* MARK ELEMENT */
+
+/*
+   <mark> normally highlights text.
+
+   Custom background and text colors are
+   applied for better visual consistency.
+*/
+
+.article-content mark {
+    padding: 2px 5px;
+
+    background-color: #fef3c7;
+
+    color: #92400e;
+
+    border-radius: 3px;
+
+    font-weight: 600;
+}
+
+
+/* BLOCKQUOTE */
+
+blockquote {
+    margin: 30px 0;
+
+    padding: 20px 25px;
+
+    border-left: 5px solid #2563eb;
+
+    background-color: #eff6ff;
+
+    /*
+       Serif font gives the quotation
+       a different visual character.
+    */
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 1.3rem;
+
+    font-style: italic;
+
+    font-weight: 600;
+
+    line-height: 1.6;
+
+    letter-spacing: 0.3px;
+
+    text-align: center;
+
+    color: #1e3a8a;
+}
+
+
+/* FOOTER */
+
+.footer {
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: #0f172a;
+
+    color: white;
+}
+
+.footer p {
+    margin: 0;
+
+    font-size: 0.9rem;
+}
+
+
+/*RESPONSIVE DESIGN */
+
+@media (max-width: 700px) {
+
+    main {
+        width: 94%;
+
+        padding: 35px 0;
+    }
+
+    .header {
+        padding: 30px 15px;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .article {
+        padding: 30px 22px;
+    }
+
+    .article-header h2 {
+        font-size: 2rem;
+    }
+
+    .article-content p {
+        font-size: 1rem;
+
+        line-height: 1.7;
+    }
+
+    blockquote {
+        font-size: 1.1rem;
+    }
+}

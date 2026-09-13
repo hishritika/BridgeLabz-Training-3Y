@@ -1,0 +1,463 @@
+/* GENERAL PAGE STYLING*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f8fafc;
+
+    color: #1e293b;
+
+    line-height: 1.6;
+}
+
+
+/*HEADER*/
+
+.header {
+    padding: 35px 20px;
+
+    text-align: center;
+
+    background-color: #0f172a;
+
+    color: white;
+}
+
+.header h1 {
+    margin: 0 0 8px;
+
+    font-size: 2.2rem;
+}
+
+.header p {
+    margin: 0;
+}
+
+
+/*MAIN CONTENT*/
+
+main {
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 45px 0;
+}
+
+section {
+    margin-bottom: 45px;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 12px;
+}
+
+section h2 {
+    margin-top: 0;
+
+    color: #1e3a8a;
+}
+
+
+/* DESCENDANT SELECTOR */
+
+/*
+   Descendant selector:
+   .intro p
+
+   Selects every <p> element that is
+   inside an element having class "intro".
+*/
+
+.intro p {
+    color: #475569;
+
+    font-size: 1.05rem;
+}
+
+
+/* ATTRIBUTE SELECTORS*/
+
+/*
+   Attribute selector:
+
+   input[type="text"]
+
+   Selects only input elements whose
+   type attribute is exactly "text".
+*/
+
+input[type="text"] {
+    border: 2px solid #2563eb;
+
+    background-color: #eff6ff;
+}
+
+
+/*
+   Attribute selector with ^= :
+
+   a[href^="https"]
+
+   The ^= operator selects elements whose
+   href attribute STARTS WITH "https".
+*/
+
+a[href^="https"] {
+    color: #2563eb;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+/*
+   Add an external-link indicator to
+   HTTPS links.
+*/
+
+a[href^="https"]::after {
+    content: " ↗";
+
+    font-size: 0.85rem;
+}
+
+
+/* FORM STYLING */
+
+.form-area {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.form-area label {
+    font-weight: bold;
+
+    margin-top: 8px;
+}
+
+.form-area input {
+    width: 100%;
+
+    max-width: 500px;
+
+    padding: 12px 15px;
+
+    border-radius: 7px;
+
+    font-size: 1rem;
+
+    outline: none;
+}
+
+
+/* :FOCUS PSEUDO-CLASS */
+
+/*
+   :focus selects an element when it receives
+   keyboard focus or is clicked.
+
+   Here the input gets a different outline
+   and border when focused.
+*/
+
+input:focus {
+    border-color: #7c3aed;
+
+    outline: 3px solid rgba(124, 58, 237, 0.2);
+}
+
+
+/* LINK NAVIGATION */
+
+.links {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+.links a {
+    padding: 8px 12px;
+
+    border-radius: 6px;
+}
+
+
+/*:HOVER PSEUDO-CLASS */
+
+/*
+   :hover selects an element when the
+   mouse pointer is placed over it.
+*/
+
+.links a:hover {
+    background-color: #dbeafe;
+
+    color: #1d4ed8;
+
+    text-decoration: underline;
+}
+
+
+/*:NTH-CHILD() PSEUDO-CLASS */
+
+/*
+   :nth-child(2) selects the second <li>
+   element among its siblings.
+*/
+
+.selector-list li:nth-child(2) {
+    background-color: #fef3c7;
+
+    font-weight: bold;
+}
+
+
+/*
+   Another nth-child example:
+   Every odd list item receives spacing.
+*/
+
+.selector-list li:nth-child(odd) {
+    padding-left: 10px;
+}
+
+
+/* LIST STYLING */
+
+.selector-list {
+    padding: 0;
+
+    list-style-position: inside;
+}
+
+.selector-list li {
+    padding: 12px;
+
+    margin-bottom: 8px;
+
+    background-color: #f1f5f9;
+
+    border-radius: 6px;
+
+    transition: 0.3s ease;
+}
+
+
+/*
+   Hover pseudo-class applied to list items.
+*/
+
+.selector-list li:hover {
+    background-color: #dbeafe;
+
+    transform: translateX(8px);
+}
+
+
+/* BUTTON */
+
+.demo-button {
+    padding: 12px 25px;
+
+    border: 2px solid #2563eb;
+
+    border-radius: 8px;
+
+    background-color: white;
+
+    color: #2563eb;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+/*
+   :hover changes the button appearance
+   when the pointer is placed over it.
+*/
+
+.demo-button:hover {
+    background-color: #2563eb;
+
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+
+/* CHILD COMBINATOR > */
+
+/*
+   Child combinator:
+
+   .parent-box > p
+
+   Selects ONLY <p> elements that are
+   DIRECT children of .parent-box.
+
+   It does not select paragraphs deeper
+   inside .nested-box.
+*/
+
+.parent-box > p {
+    padding: 12px;
+
+    background-color: #dcfce7;
+
+    border-left: 4px solid #16a34a;
+}
+
+
+/*DESCENDANT COMBINATOR*/
+
+/*
+   Descendant selector:
+
+   .parent-box p
+
+   Selects every <p> element anywhere
+   inside .parent-box.
+
+   This includes the paragraph inside
+   .nested-box.
+*/
+
+.parent-box p {
+    color: #334155;
+}
+
+
+/*ADJACENT SIBLING COMBINATOR */
+
+/*
+   Adjacent sibling combinator:
+
+   h3 + p
+
+   Selects the first <p> that comes
+   immediately after an <h3>.
+*/
+
+.parent-box h3 + p {
+    font-weight: bold;
+
+    color: #166534;
+}
+
+
+/* GENERAL SIBLING COMBINATOR */
+
+/*
+   General sibling combinator:
+
+   .nested-box ~ p
+
+   Selects every <p> element that comes
+   AFTER .nested-box and shares the same
+   parent.
+
+   Unlike +, ~ does not require the
+   element to be immediately next.
+*/
+
+.nested-box ~ p {
+    border-top: 2px dashed #94a3b8;
+
+    padding-top: 15px;
+}
+
+
+/*  PSEUDO-ELEMENT ::BEFORE */
+
+/*
+   ::before creates generated content
+   before the actual content of an element.
+*/
+
+.combinator-section h2::before {
+    content: "★ ";
+
+    color: #f59e0b;
+}
+
+
+/* PSEUDO-ELEMENT ::AFTER*/
+
+/*
+   ::after creates generated content
+   after the actual content of an element.
+*/
+
+.combinator-section h2::after {
+    content: " ✓";
+
+    color: #16a34a;
+}
+
+
+/* FOOTER */
+
+.footer {
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: #0f172a;
+
+    color: white;
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+/*RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+
+    main {
+        width: 94%;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .links {
+        flex-direction: column;
+    }
+
+    .links a {
+        width: fit-content;
+    }
+}
