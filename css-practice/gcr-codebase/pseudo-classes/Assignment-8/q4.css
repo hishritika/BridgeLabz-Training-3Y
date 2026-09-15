@@ -1,0 +1,92 @@
+p {
+    color: #333;
+    margin: 10px 0;
+}
+
+
+/* Class selector: styles elements having the highlight class */
+.highlight {
+    background-color: yellow;
+    padding: 8px;
+}
+
+
+/* ID selector: styles the element having the special ID */
+#special {
+    background-color: lightblue;
+    padding: 8px;
+}
+
+
+/* Attribute selector: styles input elements having type="text" */
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+
+/* Descendant selector: selects paragraphs inside the div */
+div p {
+    background-color: lightgray;
+    padding: 8px;
+}
+
+
+/* Child selector: selects direct li children of ul */
+ul > li {
+    padding: 8px;
+    margin: 5px;
+    background-color: lightgreen;
+}
+
+
+/* Adjacent sibling selector: selects the first p immediately after div */
+div + p {
+    background-color: pink;
+    padding: 8px;
+}
+
+
+/* General sibling selector: selects all p elements after div */
+div ~ p {
+    border: 2px solid black;
+}
+
+
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.selector-section,
+.combinator-section,
+.list-section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+a {
+    display: block;
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+}

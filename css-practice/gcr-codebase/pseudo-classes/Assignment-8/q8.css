@@ -1,0 +1,62 @@
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #edea90;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+
+/* Flexbox is used to place both boxes side-by-side */
+.boxes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+/* Common styling for both boxes */
+.box {
+    width: 300px;
+    padding: 30px;
+    border: 5px solid black;
+    border-radius: 8px;
+}
+
+
+/* Default box-sizing is content-box */
+.default-box {
+    box-sizing: content-box;
+    background-color: lightblue;
+}
+
+
+/* Border-box includes padding and border in the total width */
+.border-box {
+    box-sizing: border-box;
+    background-color: lightgreen;
+}
+
+
+footer {
+    margin-top: 450px;
+}
+
+
+/* Responsive layout for smaller screens */
+@media (max-width: 700px) {
+
+    .boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+    }
+}

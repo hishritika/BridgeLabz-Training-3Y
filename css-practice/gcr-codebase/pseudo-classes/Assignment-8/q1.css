@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #6c9ee4;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+.examples {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.example {
+    background-color: white;
+    width: 220px;
+    min-height: 250px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.example h2 {
+    margin-top: 0;
+}
+
+/* :hover changes the color when the mouse is over the link */
+.example a {
+    color: blue;
+}
+
+.example a:hover {
+    color: red;
+}
+
+/* :focus changes the border when the input is selected */
+.example input {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.example input:focus {
+    border: 2px solid red;
+    outline: none;
+}
+
+/* :active changes the button while it is being clicked */
+.example button {
+    padding: 10px 20px;
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.example button:active {
+    background-color: red;
+    color: white;
+}
+
+/* :nth-child() changes specific list items */
+.fruits {
+    padding: 0;
+    list-style: none;
+}
+
+.fruits li {
+    padding: 8px;
+    margin: 3px;
+    background-color: lightgray;
+}
+
+.fruits li:nth-child(2) {
+    background-color: aqua;
+}
+
+.fruits li:nth-child(3) {
+    background-color: pink;
+}
+
+footer {
+    margin-top: 400px;
+}

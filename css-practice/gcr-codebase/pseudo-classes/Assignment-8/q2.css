@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 80px;
+}
+
+.tooltip-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.tooltip-box {
+    position: relative;
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: lightblue;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/* Tooltip is positioned above the element */
+.tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    background-color: black;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    
+    white-space: nowrap;
+}
+
+/* Tooltip appears when the element is hovered */
+.tooltip-box:hover .tooltip {
+    opacity: 1;
+}
+
+footer {
+    margin-top: 600px;
+}

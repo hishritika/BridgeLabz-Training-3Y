@@ -1,0 +1,83 @@
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #8ee491;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 60px;
+}
+
+
+/* Flexbox is used to distribute the buttons evenly */
+.effects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+/* Common button styling */
+.effect-button {
+    padding: 15px 30px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: 0.3s ease-in-out;
+}
+
+
+/* First button */
+.button-one {
+    background-color: lightblue;
+}
+
+
+/* Hover changes color, size and shadow */
+.button-one:hover {
+    background-color: blue;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 5px 10px gray;
+}
+
+
+/* Second button */
+.button-two {
+    background-color: lightgreen;
+}
+
+
+/* Hover grows the button */
+.button-two:hover {
+    background-color: green;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 5px 10px gray;
+}
+
+
+/* Third button */
+.button-three {
+    background-color: pink;
+}
+
+
+/* Hover combines multiple effects */
+.button-three:hover {
+    background-color: red;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 5px 10px gray;
+}
+
+
+footer {
+    margin-top: 600px;
+}

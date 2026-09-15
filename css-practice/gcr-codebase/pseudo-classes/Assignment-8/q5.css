@@ -1,0 +1,96 @@
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(225, 95, 121);
+    text-align: center;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+
+/* Flexbox is used to align all buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* Common button styling */
+.btn {
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+/* Primary button */
+.primary {
+    background-color: blue;
+    color: white;
+    border: 2px solid blue;
+}
+
+
+/* Primary button hover effect */
+.primary:hover {
+    background-color: darkblue;
+}
+
+
+/* Secondary button */
+.secondary {
+    background-color: gray;
+    color: white;
+    border: 2px solid gray;
+}
+
+
+/* Secondary button hover effect */
+.secondary:hover {
+    background-color: black;
+}
+
+
+/* Outline button */
+.outline {
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
+}
+
+
+/* Outline button hover effect */
+.outline:hover {
+    background-color: blue;
+    color: white;
+}
+
+
+/* Focus effect */
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px gray;
+}
+
+
+/* Disabled button */
+.btn:disabled {
+    background-color: lightgray;
+    color: gray;
+    border: 2px solid gray;
+    cursor: not-allowed;
+}
+
+
+/* Footer styling */
+footer {
+    margin-top: 600px;
+}

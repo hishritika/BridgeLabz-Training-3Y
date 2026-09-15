@@ -1,0 +1,117 @@
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+
+/* Flexbox is used to center the animations */
+.animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    min-height: 400px;
+}
+
+
+/* Moving Box */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    border: 2px solid black;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation-name: moveBox;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+/* Animation for moving box */
+@keyframes moveBox {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100px);
+    }
+}
+
+
+/* Bouncing Ball */
+.ball {
+    width: 80px;
+    height: 80px;
+    background-color: orange;
+    border: 2px solid black;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation-name: bounceBall;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+/* Animation for bouncing ball */
+@keyframes bounceBall {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-100px);
+    }
+}
+
+
+/* Color Changing Text */
+.changing-text {
+    animation-name: changeColor;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
+}
+
+
+/* Animation for changing text color */
+@keyframes changeColor {
+    0% {
+        color: blue;
+    }
+
+    50% {
+        color: red;
+    }
+
+    100% {
+        color: green;
+    }
+}
+
+
+footer {
+    margin-top: 300px;
+}
