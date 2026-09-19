@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.cheat-sheet {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.topics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.topic-box {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.topic-box h2 {
+    margin-bottom: 15px;
+}
+
+.topic-box p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.topic-box code {
+    display: block;
+    padding: 10px;
+    background-color: #eeeeee;
+}
+
+/* Hover effect */
+
+.topic-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Stack boxes below 700px */
+
+@media (max-width: 700px) {
+
+    .topics {
+        grid-template-columns: 1fr;
+    }
+
+    .topic-box {
+        padding: 20px;
+    }
+}

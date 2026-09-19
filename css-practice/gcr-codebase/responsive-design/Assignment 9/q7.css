@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header using Flexbox */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #222;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main content */
+
+main {
+    flex: 1;
+    padding: 40px 20px;
+}
+
+/* Main sections using Grid */
+
+.demo-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Sections */
+
+.demo-section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+
+    animation: fade-in 1s ease;
+    transition: transform 0.3s ease;
+}
+
+.demo-section:hover {
+    transform: translateY(-5px);
+}
+
+.demo-section h2 {
+    margin-bottom: 20px;
+}
+
+/* Image gallery */
+
+.gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 50%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Responsive design section */
+
+.design-section p {
+    line-height: 1.6;
+}
+
+/* Cheat sheet */
+
+.cheat-item {
+    margin-bottom: 15px;
+}
+
+.cheat-item h3 {
+    margin-bottom: 5px;
+}
+
+.cheat-item p {
+    line-height: 1.5;
+}
+
+/* Footer */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Fade-in animation */
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Stack sections below 700px */
+
+@media (max-width: 700px) {
+
+    .demo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+}
